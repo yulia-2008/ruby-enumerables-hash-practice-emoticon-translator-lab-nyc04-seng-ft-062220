@@ -1,12 +1,13 @@
 #require modules here 
 require 'yaml'
 
-=begin def load_library(file)
-  emoticon=YAML.load_file(file)
-  hasj={}
+def load_library(file)
+  library=YAML.load_file(file)
+end  
   
   
- new_array=[]
+ 
+=begin new_array=[]
   hash={}
    array=emoticon.split('| |')
   array.each do |ind|
@@ -19,11 +20,9 @@ require 'yaml'
 =end
 
 
-def get_japanese_emoticon(file)
-  x=YAML.load_file(file)
-  puts x
+def get_japanese_emoticon
 end
-get_japanese_emoticon("./emoticons.yml")
+get_japanese_emoticon
 
 def get_english_meaning
   # code goes here
