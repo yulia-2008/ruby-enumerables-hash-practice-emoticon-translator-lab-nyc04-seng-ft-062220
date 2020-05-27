@@ -20,7 +20,7 @@ require 'yaml'
 
 
 def get_japanese_emoticon
-  x=YAML.load("./emoticons.yml")
+  x=YAML.load_file("./emoticons.yml")
   puts x
 end
 get_japanese_emoticon
