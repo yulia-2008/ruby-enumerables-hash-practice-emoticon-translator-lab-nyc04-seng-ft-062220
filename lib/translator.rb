@@ -12,18 +12,7 @@ hash
 end  
 load_library('./lib/emoticons.yml')  
   
- 
-=begin new_array=[]
-  hash={}
-   array=emoticon.split('| |')
-  array.each do |ind|
-    new_array << ind.split('|')
-    new_array.each do |index|
-        hash[index[0]]={:english => index[1], :japanese => index[2]}
 
-    
-   hash
-=end
 
 
 def get_japanese_emoticon
