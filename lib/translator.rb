@@ -10,15 +10,21 @@ def load_library(file)
 end 
 hash
 end  
-load_library('./lib/emoticons.yml')  
+#load_library('./lib/emoticons.yml')  
   
 
 
 
 def get_japanese_emoticon
 end
-get_japanese_emoticon
 
-def get_english_meaning
-  # code goes here
+
+def get_english_meaning(load_library(file), emoticon)
+  load_library(file).each do |key, value|
+    value.each do | key1, value1 |
+    if value1 == emoticon 
+      return key 
+end 
+end
+end
 end
