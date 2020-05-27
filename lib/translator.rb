@@ -1,5 +1,5 @@
 #require modules here 
-require "./emoticons.yml"
+require 'yaml'
 
 =begin def load_library(file)
   emoticon=YAML.load_file(file)
@@ -20,7 +20,7 @@ require "./emoticons.yml"
 
 
 def get_japanese_emoticon
-  x=File.open("../gitignore")
+  x=YAML.load("./emoticons.yml")
   puts x
 end
 get_japanese_emoticon
