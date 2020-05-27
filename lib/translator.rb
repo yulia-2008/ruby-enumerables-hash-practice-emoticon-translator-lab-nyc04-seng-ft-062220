@@ -19,11 +19,11 @@ require 'yaml'
 =end
 
 
-def get_japanese_emoticon
-  x=YAML.load_file("./emoticons.yml")
+def get_japanese_emoticon(file)
+  x=YAML.load_file(file)
   puts x
 end
-get_japanese_emoticon
+get_japanese_emoticon("./emoticons.yml")
 
 def get_english_meaning
   # code goes here
