@@ -18,7 +18,7 @@ end
 end 
 end 
 end
-load_library('./lib/emoticons.yml',)
+load_library('./lib/emoticons.yml',"(^_-)")
 
 
 def get_japanese_emoticon
