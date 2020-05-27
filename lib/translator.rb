@@ -10,7 +10,7 @@ def load_library(file)
 end 
 hash
 end  
-load_library('./lib/emoticons.yml')  
+#load_library('./lib/emoticons.yml')  
   
 
 
