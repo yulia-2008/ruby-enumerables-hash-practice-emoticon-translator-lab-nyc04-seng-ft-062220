@@ -1,7 +1,7 @@
 #require modules here 
 require "./emoticons.yml"
 
-def load_library(file)
+=begin def load_library(file)
   emoticon=YAML.load_file(file)
   hasj={}
   
@@ -16,11 +16,11 @@ def load_library(file)
 
     
    hash
-end
+=end
 
 
 def get_japanese_emoticon
-  # code goes here
+  x=File.open()
 end
 
 def get_english_meaning
