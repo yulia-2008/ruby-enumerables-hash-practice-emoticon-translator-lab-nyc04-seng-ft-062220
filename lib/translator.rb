@@ -15,23 +15,27 @@ end
 
 def get_japanese_emoticon(file, emoticon)
  library=load_library(file)
- emo=
+ message="Sorry, that emoticon was not found"
 library.each do |key, value|
   value.each do |key1, value1|
     if value1==emoticon
-      emo=
+      message=value[:japanese]
+    end
+end    
+end
+message
 end
 
 
 def get_english_meaning(file, emoticon)
   library=load_library(file)
-  name = "Sorry, that emoticon was not found"
+  message = "Sorry, that emoticon was not found"
 library.each do |key, value|
     value.each do |key1, value1|
     if value1 == emoticon 
-      name=key 
+      message=key 
 end
 end 
 end
-name
+message
 end
