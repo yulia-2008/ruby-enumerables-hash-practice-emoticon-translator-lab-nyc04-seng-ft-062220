@@ -2,7 +2,7 @@
 require 'yaml'
 require 'pry'
 
-def load_library(file, emo)
+def load_library(file)
   hash={}
   library=YAML.load_file(file)
   library.each do |key, value|
