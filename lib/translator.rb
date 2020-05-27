@@ -21,14 +21,13 @@ end
 
 def get_english_meaning(file, emoticon)
   library=load_library(file)
-  name = 
-hash.each do |key, value|
+  name = "Sorry, that emoticon was not found"
+library.each do |key, value|
     value.each do |key1, value1|
     if value1 == emoticon 
-      return key 
-    else 
-      return "Sorry, that emoticon was not found"
+      name=key 
 end
 end 
-end 
+end
+name
 end
