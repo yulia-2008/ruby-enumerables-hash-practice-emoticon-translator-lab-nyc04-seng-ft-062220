@@ -8,6 +8,7 @@ def load_library(file, emo)
   library.each do |key, value|
   hash[key]={:english => value[0], :japanese => value[1]}
 end
+hash
 end
 #load_library('./lib/emoticons.yml',"(^_-)")
 
