@@ -24,6 +24,8 @@ def get_english_meaning(file, emoticon)
     value.each do | key1, value1 |
     if value1 == emoticon 
       return key 
+    else 
+      return 
 end 
 end
 end
