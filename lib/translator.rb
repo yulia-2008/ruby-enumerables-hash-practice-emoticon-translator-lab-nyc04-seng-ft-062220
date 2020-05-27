@@ -5,7 +5,7 @@ require 'pry'
 def load_library(file)
   library=YAML.load_file(file)
 end  
-load_library('./emoticons.yml')  
+load_library('./lib/emoticons.yml')  
   
  
 =begin new_array=[]
