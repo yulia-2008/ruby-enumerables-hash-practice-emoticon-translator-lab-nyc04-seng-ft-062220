@@ -15,7 +15,6 @@ end
 
 def get_japanese_emoticon
   
-  
 
 end
 
@@ -23,14 +22,13 @@ end
 def get_english_meaning(file, emoticon)
   library=load_library(file)
   name = 
-  library.each do |key, value|
+hash.each do |key, value|
     value.each do |key1, value1|
     if value1 == emoticon 
-     name=key 
+      return key 
     else 
-      name = 
+      return "Sorry, that emoticon was not found"
+end
 end 
-end
-end
-name
+end 
 end
