@@ -13,9 +13,13 @@ end
 #load_library('./lib/emoticons.yml',"(^_-)")
 
 
-def get_japanese_emoticon
-  
-
+def get_japanese_emoticon(file, emoticon)
+ library=load_library(file)
+ emo=
+library.each do |key, value|
+  value.each do |key1, value1|
+    if value1==emoticon
+      emo=
 end
 
 
