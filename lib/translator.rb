@@ -20,8 +20,10 @@ require "./emoticons.yml"
 
 
 def get_japanese_emoticon
-  x=File.open()
+  x=File.open("./emoticons.yml")
+  puts x
 end
+get_japanese_emoticon
 
 def get_english_meaning
   # code goes here
