@@ -2,7 +2,7 @@
 require 'yaml'
 require 'pry'
 
-def load_library(file)
+def load_library(file, emo)
   hash={}
   library=YAML.load_file(file)
   library.each do |key, value|
@@ -16,7 +16,7 @@ hash.each do |key, value|
       return "Sorry, that emoticon was not found"
 
 end  
-load_library('./lib/emoticons.yml')  
+load_library('./lib/emoticons.yml', )  
   
 
 
