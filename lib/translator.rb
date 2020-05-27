@@ -20,7 +20,7 @@ require "./emoticons.yml"
 
 
 def get_japanese_emoticon
-  x=File.open("./emoticons.yml")
+  x=File.open(".")
   puts x
 end
 get_japanese_emoticon
